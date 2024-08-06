@@ -1,0 +1,119 @@
+/* display users */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 50vh;
+  margin-top: 50px;
+}
+
+form label {
+  margin-bottom: 5px;
+
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+form button {
+  background-color: rgb(190, 190, 190);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+form button:hover {
+  background-color: grey;
+}
+
+form .error {
+  color: red;
+  margin-top: 10px;
+}
+
+form .success {
+  color: green;
+  margin-top: 10px;
+}
+
+table {
+  margin-bottom: 10px;
+}
+
+td {
+  padding-right: 10px;
+}
+
+.form1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+.form1 #reveal_pass {
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+.button-container {
+  display: flex;
+} 
+
+@media screen and (max-width: 480px) {
+  form button {
+    padding: 10px;
+  }
+}
+
+
+/* register */
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.form1 label {
+  margin-right: 10px;
+  order: -1;
+  width: 120px;
+  text-align: right;
+}
+
+
+.form1 input[type="text"], .form1 input[type="email"] {
+  width: 250px;
+}
+
+.form1 input[type="password"] {
+  width: 250px;
+}
+
+.form1 input[type="submit"] {
+  width: 100px;
+  color: black;
+}
+
+.form1 input[type="submit"]:hover {
+  background-color: grey;
+}

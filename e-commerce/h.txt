@@ -1,0 +1,27 @@
+Start session
+Include 'connect.php'
+
+If a 'remove' action is requested:
+    Get the product_id from $_POST
+    Remove the product_id from $_SESSION['cart']
+End of if statement
+If an 'update' action is requested:
+    Get the product_id and quantity from $_POST
+    Update the quantity of the product_id in $_SESSION['cart']
+End of if statement
+Output HTML:
+    Output doctype, html, head, and title
+    Include 'head.php'
+    Output body:
+        If cart is not empty:
+            Output an unordered list
+            For each product_id and quantity in $_SESSION['cart']:
+                Retrieve the product information from the database using the product_id
+                If the product exists:
+                    Output a container for the product information
+                    Output an image of the product
+                    Output the product title, author, description, price, book ID, and quantity
+                    Output a form for updating the quantity or removing the product from the cart
+        Else:
+            Output a message indicating that the cart is empty.
+End of html tags

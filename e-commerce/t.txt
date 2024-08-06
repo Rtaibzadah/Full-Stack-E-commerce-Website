@@ -1,0 +1,25 @@
+Start session
+Include necessary files and establish a database connection
+Include head.php
+
+Print HTML doctype and opening tags
+Print HTML body opening tag
+
+Print filter section:
+    Print a form with method="get" and empty action attribute
+        Print a select element with name="author" and id="author"
+            Print option with value="" and text "All Authors"
+            Retrieve distinct author names from the database
+            Loop through the author names
+                Print option with value="$author"
+        Print a button with type="submit" and text "Filter Products"
+
+Print products section:
+    Check if an author is selected
+        If true, retrieve products by the selected author
+        Else: retrieve all products
+    Loop through the retrieved products
+        Print product details, including image, name, author, and price
+
+Print HTML body closing tag
+Print HTML closing tag

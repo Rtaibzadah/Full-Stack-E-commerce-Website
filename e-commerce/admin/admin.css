@@ -1,0 +1,44 @@
+header {
+    background-color: #f2f2f2;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  button {
+    background-color: rgb(190, 190, 190);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+    /* margin: 0 0.5em; */
+    float: left;
+    margin-right: 1em;
+  }
+
+  button a {
+    color: white;
+    text-decoration: none;
+  }
+
+  button:hover {
+    background-color: grey;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .logout-button {
+    padding-right: 1em;
+  }
